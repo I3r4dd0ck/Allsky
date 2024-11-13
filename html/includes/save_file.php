@@ -16,7 +16,7 @@ else
 
 $path = "";
 if (isset($_POST['path']))
-	$path = $_POST['path'];
+	$path = basename($_POST['path']);
 if ($path == "") {
 	echo "E	No file name specified to save!";
 	exit;
